@@ -1,0 +1,115 @@
+
+/* General Reset */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
+        margin: 0;
+        background-color: #f4f4f9; /* Light background color */
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        text-align: center;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .banner-message {
+        font-size: 24px;
+        font-weight: bold;
+        color: #004d99;
+        margin-bottom: 20px;
+    }
+    #searchBtn{
+        background-color: red;
+        height: 2 rpm; 
+
+
+    }
+    #cityInput{
+        height: 1.5 rpm;
+    }
+    
+    /* Login and Register Container Styles */
+    .login-container,
+    .register-container {
+        background-color: #ffffff; /* White form background */
+        padding: 30px 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+    
+    .login-container h2,
+    .register-container h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .login-container input,
+    .register-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .login-container button,
+    .register-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF; /* Blue button */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .login-container button:hover,
+    .register-container button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+    
+/* General Button Styles */
+.btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Logout Button Specific Styles */
+    .btn-logout {
+        background-color: #d9534f; /* Red */
+    }
+    
+    .btn-logout:hover {
+        background-color: #c9302c;
+    }
+    
+
+

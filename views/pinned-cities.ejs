@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pinned Cities</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Pinned Cities</h1>
+
+		<table border="1">
+			<tr>
+				<th>City</th>
+				<th>Pinned Count</th>
+			</tr>
+			<% cities.forEach(city => { %>
+			<tr>
+				<td><%= city._id %></td>
+				<td><%= city.count %></td>
+			</tr>
+			<% }) %>
+		</table>
+
+		<br>
+		<!-- Button to delete all cities -->
+		<form action="/api/delete-all-cities" method="POST">
+			<button type="submit">Remove All Cities</button>
+		</form>
+
+		<br>
+		<a href="/app">Go Back to Pin Cities</a>
+	</div>
+</body>
+
+</html>

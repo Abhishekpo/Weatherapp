@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+        <div class="container">
+            <h1>Weather App</h1>
+            <br>
+            <br>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+            <div id="weatherDisplay"></div>
+            <br>
+            <!-- Navigate to Pinned Cities -->
+            <a href="/pinned-cities" class="btn">Go to Pinned Cities</a>
+            <br><br>
+            <!-- Logout Button -->
+            <form action="/logout" method="POST">
+                <button type="submit" class="btn btn-logout">Logout</button>
+            </form>
+        </div>
+        <script>
+            const API_KEY = '<%= process.env.API_KEY %>';
+        </script>
+        <script src="/app.js"></script>
+    </body>
+    </html>
